@@ -57,8 +57,9 @@ function CustomTooltip(props) {
         <p>{`${new Date(label).toLocaleString("en-US", {
           month: "short",
           day: "numeric",
+          "weekday": "short",
         })}`}</p>
-        <p className="label">{`$${payload[0].value.toFixed(4)}`}</p>
+        <p className="label">{`$${payload[0].value.toFixed(4)} USD`}</p>
       </div>
     );
   }
